@@ -1,5 +1,5 @@
 # Find-your-Lyrics
-Find your lyrics quickly using lyrics ovh. Project created for a codepenchallenge.
+Find the lyrics of your favorite songs quickly using lyrics ovh.
 
 TODO:
 * review design
