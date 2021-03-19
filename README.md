@@ -1,2 +1,5 @@
 # Find-your-Lyrics
-Lyrics quickly available using lyrics ovh. Pen created for codepenchallenge roundtable
+Find your lyrics quickly using lyrics ovh. Project created for a codepenchallenge.
+
+TODO:
+* review design
