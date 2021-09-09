@@ -40,6 +40,7 @@ input.on('input', function() {
 
 function removeResults() {
   $('.result').remove();
+  lyricsDiv.hide();
 }
 
 function suggestions() {
@@ -48,7 +49,7 @@ function suggestions() {
     removeResults();
     return;
   }
-  console.log("Search suggestions for", value);
+  console.log('Search suggestions for', value);
   $.getJSON(apiUrl + '/suggest/' + value, function (data) {
     removeResults();
     var finalResults = [];
@@ -85,7 +86,7 @@ function suggestions() {
 }
 
 function getLyrics(song) {
-  console.log("Search lyrics for", song);
+  console.log('Search lyrics for', song);
   removeResults();
   lyricsDiv.slideUp();
   $.getJSON(apiUrl + '/v1/' + song.artist + '/' + song.title, function (data) {

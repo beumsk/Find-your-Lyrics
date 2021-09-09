@@ -13,7 +13,7 @@ body {
   align-items: center; */
   font-family: Arial;
   background-color: #FBDA61;
-  background-image: linear-gradient(245deg, #FBDA61 0%, #FF5A5D 100%);
+  background-image: linear-gradient(to top left, #FF5A5D, #FBDA61);
 }
 
 header h1 {
@@ -23,25 +23,64 @@ header h1 {
 }
 
 main {
-/*   width: 400px; */
-/*   height: 400px; */
-/*   background: #666; */
-/*   margin: auto; */
+  width: 300px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 600px;
+  }
+}
+
+.label {
+  display: block;
+  margin: 10px 0;
+}
+
+.search {
+  -webkit-appearance: button;
+  padding: 10px;
+  font-size: inherit;
+  width: 100%;
+}
+
+.results {
+  margin-top: 20px;
+}
+
+.results li {
+  background: rgba(256,256,256,0.6);
+  margin-bottom: 2px;
+  list-style: none;
+  padding: 10px 0;
+}
+
+.results li:hover {
+  cursor: pointer;
+  color: #FF5A5D;
 }
 
 .lyrics {
   background: rgba(256,256,256,0.6);
   margin: 20px auto;
+  padding: 20px;
 }
 
 .copy-lyrics {
   margin: 10px auto 20px;
+  padding: 10px;
   color: #FF5A5D;
-  border: solid #FF5A5D 1px;  
+  border: solid #FF5A5D 1px;
+  cursor: pointer;
 }
 .copy-lyrics:hover {
   background: #FF5A5D;
   color: white;
+}
+
+.hidden {
+  display: none;
 }
 
 footer {

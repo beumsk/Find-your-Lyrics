@@ -16,7 +16,6 @@
   <meta property="og:image:secure_url" content="https://beumsk.github.io/Find-your-Lyrics/cover.jpg">
   <meta property="og:description" content="Find the lyrics of your favorite songs quickly using lyrics ovh.">
   
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
   <link rel="stylesheet" href="css/style.css">
   
   <title>Find your Lyrics</title>
@@ -27,15 +26,15 @@
   <h1>Find your Lyrics</h1>
 </header>
 
-<main class="container">  
+<main>  
   <div class="search">
-    <label for="input" class="sr-only">Type a song title or artist you want the lyrics from</label>
-    <input type="text" name="song" class="form-control" autofocus="autofocus" placeholder="Type a song title or artist you want the lyrics from" id="input" />
-    <ul class="results list-group" id="results">
+    <label for="input" class="label">Type a song title or artist you want the lyrics from</label>
+    <input type="text" name="song" class="search" autofocus="autofocus" placeholder="Type a song title or artist you want the lyrics from" id="input" />
+    <ul class="results" id="results">
     </ul>
   </div>
 
-  <div class="lyrics jumbotron" id="lyrics">
+  <div class="lyrics hidden" id="lyrics">
   </div>
 </main>
 
